@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fb;
+    background-image: url('background3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 48px auto 0 auto;
+    padding: 40px 48px 32px 48px;
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(30, 90, 200, 0.08);
+    
+    backdrop-filter: blur(8px); /* Adjust this line to change the blurry thing intensity */
+    -webkit-backdrop-filter: blur(2px);
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #1e5ac8;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.15rem;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+ul {
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+
+ul li {
+    font-size: 1.08rem;
+    margin-bottom: 10px;
+    color: #222;
+    position: relative;
+    padding-left: 12px;
+}
+
+ul li::before {
+    content: "•";
+    color: #1e5ac8;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    top: 0;
+}
+
+section {
+    background: linear-gradient(90deg, #e3f0ff 0%, #f7f9fb 100%);
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 8px rgba(30, 90, 200, 0.06);
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: #1e5ac8;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1.08rem;
+    color: #222;
+    margin: 0;
+}
+
+a {
+    color: #1e5ac8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #2a7de9;
+    text-decoration: underline;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: #1e5ac8;
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(30, 90, 200, 0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #2a7de9;
+    box-shadow: 0 4px 16px rgba(30, 90, 200, 0.18);
+}
+
+.alt-btn {
+    background: #fff;
+    color: #1e5ac8;
+    border: 2px solid #1e5ac8;
+}
+
+.alt-btn:hover {
+    background: #e3f0ff;
+    color: #1551a1;
+    border-color: #1551a1;
+}
